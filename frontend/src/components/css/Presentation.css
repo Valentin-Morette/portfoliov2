@@ -1,14 +1,7 @@
 .presentation {
   padding: 20px;
-  margin: 100px auto;
+  margin: 150px auto;
   max-width: 1000px;
-}
-
-.textImg {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 20px 20px 0;
-  gap: 2rem;
 }
 
 .overlay {
@@ -62,5 +55,12 @@
 @media (min-width: 768px) {
   .overlay:hover::before {
     opacity: 0;
+  }
+
+  .textImg {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px 20px 0;
+    gap: 2rem;
   }
 }
