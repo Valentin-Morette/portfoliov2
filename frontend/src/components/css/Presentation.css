@@ -1,5 +1,5 @@
 .presentation {
-  padding: 20px;
+  padding: 0 3rem;
   margin: 150px auto;
   max-width: 1000px;
 }
@@ -7,6 +7,7 @@
 .overlay {
   position: relative;
   display: flex;
+  margin: auto;
 }
 
 .overlay::before {
@@ -16,9 +17,11 @@
   left: 0;
   right: 0;
   bottom: 0;
+  width: var(--ppSize);
+  height: var(--ppSize);
   background-color: #64ffda;
   opacity: 0.3;
-  border-radius: 4px;
+  border-radius: var(--ppRadius);
   pointer-events: none;
   transition: opacity 0.1s ease;
 }
@@ -32,10 +35,10 @@
   position: absolute;
   top: 20px; /* Décale de 10px vers le bas */
   left: 20px; /* Décale de 10px vers la droite */
-  width: 100%; /* La largeur du carré est la même que celle de l'image */
-  height: 100%; /* La hauteur du carré est la même que celle de l'image */
+  width: var(--ppSize);
+  height: var(--ppSize);
   border: 2px solid #64ffda; /* La couleur et l'épaisseur de la bordure du carré */
-  border-radius: 4px; /* Conserve le même arrondi que l'image */
+  border-radius: var(--ppRadius); /* Conserve le même arrondi que l'image */
   z-index: -1; /* Place le carré en arrière-plan */
   box-sizing: border-box; /* Garde la taille du carré cohérente avec l'image */
   transition: top 0.1s ease, left 0.1s ease;
@@ -47,8 +50,16 @@
 }
 
 .pp {
-  width: 300px;
-  border-radius: 4px;
+  width: var(--ppSize);
+  height: var(--ppSize);
+  border-radius: var(--ppRadius);
+}
+
+.textImg {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0 0;
+  gap: 2.5rem;
 }
 
 /* Media query pour les écrans de 768px et plus */
@@ -58,9 +69,53 @@
   }
 
   .textImg {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin: 20px 20px 20px 0;
-    gap: 2rem;
+  }
+
+  .overlay {
+    margin: 0;
+  }
+
+  .pp {
+    width: var(--ppSmallSize);
+    height: var(--ppSmallSize);
+  }
+
+  .overlay::before {
+    width: var(--ppSmallSize);
+    height: var(--ppSmallSize);
+  }
+
+  .overlay::after {
+    width: var(--ppSmallSize);
+    height: var(--ppSmallSize);
+  }
+
+  .presentation {
+    padding: 0 7rem;
+  }
+}
+
+/* Media query pour les écrans de 1024px et plus */
+@media (min-width: 1024px) {
+  .pp {
+    width: var(--ppSize);
+    height: var(--ppSize);
+  }
+
+  .overlay::before {
+    width: var(--ppSize);
+    height: var(--ppSize);
+  }
+
+  .overlay::after {
+    width: var(--ppSize);
+    height: var(--ppSize);
+  }
+
+  .presentation {
+    padding: 0 10rem;
   }
 }

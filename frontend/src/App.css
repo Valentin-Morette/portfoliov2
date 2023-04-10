@@ -43,7 +43,18 @@ h1 {
   left: 100%; /* Positionne le trait sur la droite du titre */
   top: 50%; /* Centre verticalement le trait par rapport au titre */
   margin-left: 20px; /* Ajoutez un espace entre le titre et le trait */
-  width: 300px; /* Ajustez cette valeur pour modifier la longueur du trait */
   height: 1px; /* Ajustez cette valeur pour modifier l'épaisseur du trait */
   background-color: var(--color-light-2);
+}
+
+@media screen and (min-width: 768px) {
+  .title::after {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .title::after {
+    width: 200px;
+  }
 }

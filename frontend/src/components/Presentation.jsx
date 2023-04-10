@@ -9,12 +9,23 @@ function Presentation() {
       </h1>
       <div className="textImg">
         <p className="test">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-          consectetur, nisl nec ultricies lacinia, nisl nisl aliquet nisl, nec
-          tincidunt nisl nisl vel nisl. Sed euismod, nisl nec ultricies lacinia,
-          nisl nisl aliquet nisl, nec tincidunt nisl nisl vel nisl. Sed euismod,
-          nisl nec ultricies lacinia, nisl nisl aliquet nisl, nec tincidunt nisl
-          nisl vel nisl. Sed euismod, nisl nec ultricies lacinia, nisl nisl
+          Bonjour, je m'appelle Valentin Morette,
+          <br />
+          Je suis développeur web fullstack.
+          <br />
+          <br />
+          J'ai fais une formation de développeur web et web mobile à la Wild
+          Code School.
+          <br />
+          <br />
+          Lors de cette formation j'ai appris les bases de la programmation et
+          j'ai ensuite fais un stage de 6 mois chez Inter-Actif, un Apple
+          Premium Reseller.
+          <br />
+          <br />
+          Suite à ce stage j'ai été embauché en tant que développeur web
+          fullstack, je suis en charge du developpement de l'API qui alimente
+          l'ensemble des projets de l'entreprise.
         </p>
         <div className="overlay">
           <img src={pp} alt="pp" className="pp" />

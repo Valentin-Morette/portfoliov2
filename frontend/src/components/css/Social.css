@@ -1,28 +1,47 @@
-.icon {
-  font-size: 1.5rem;
-  color: var(--color-light-2);
+.social-list,
+.mail-list {
+  display: none;
 }
 
-.icon:hover {
-  color: var(--green-main);
-}
+/* Media query pour les écrans de 768px et plus */
+@media (min-width: 768px) {
+  .icon {
+    font-size: 1.5rem;
+    color: var(--color-light-2);
+  }
 
-.social-list {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 0 0 3rem;
-  gap: 1rem;
-  z-index: 10; /* Ajustez cette valeur pour vous assurer que la liste reste au-dessus des autres éléments */
-}
+  .icon:hover {
+    color: var(--green-main);
+  }
 
-.verticalLine {
-  margin-top: 1rem;
-  width: 1px;
-  height: 150px;
-  background-color: var(--color-light-2);
+  .social-list,
+  .mail-list {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    z-index: 10; /* Ajustez cette valeur pour vous assurer que la liste reste au-dessus des autres éléments */
+  }
+
+  .social-list {
+    bottom: 0;
+    left: 0;
+    margin: 0 0 0 3rem;
+  }
+
+  .mail-list {
+    bottom: 0;
+    right: 0;
+    margin: 0 3rem 0 0;
+  }
+
+  .verticalLine {
+    margin-top: 1rem;
+    width: 1px;
+    height: 150px;
+    background-color: var(--color-light-2);
+  }
 }
