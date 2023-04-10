@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "fira";
+  src: url("./assets/fonts/FiraCode-Light.ttf");
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("./assets/fonts/InterstateMonoRegular.woff");
+}
+
+:root {
+  --main-color: #0a192f;
+  --main-color-light: #ccd6f6;
+  --color-light: #a8b2d1;
+  --color-light-2: #8892b0;
+  --green-main: #64ffda;
+}

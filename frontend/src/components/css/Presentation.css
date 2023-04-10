@@ -1,0 +1,66 @@
+.presentation {
+  padding: 20px;
+  margin: 100px auto;
+  max-width: 1000px;
+}
+
+.textImg {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 20px 0;
+  gap: 2rem;
+}
+
+.overlay {
+  position: relative;
+  display: flex;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #64ffda;
+  opacity: 0.3;
+  border-radius: 4px;
+  pointer-events: none;
+  transition: opacity 0.1s ease;
+}
+
+.overlay:hover::before {
+  opacity: 0;
+}
+
+.overlay::after {
+  content: "";
+  position: absolute;
+  top: 20px; /* Décale de 10px vers le bas */
+  left: 20px; /* Décale de 10px vers la droite */
+  width: 100%; /* La largeur du carré est la même que celle de l'image */
+  height: 100%; /* La hauteur du carré est la même que celle de l'image */
+  border: 2px solid #64ffda; /* La couleur et l'épaisseur de la bordure du carré */
+  border-radius: 4px; /* Conserve le même arrondi que l'image */
+  z-index: -1; /* Place le carré en arrière-plan */
+  box-sizing: border-box; /* Garde la taille du carré cohérente avec l'image */
+  transition: top 0.1s ease, left 0.1s ease;
+}
+
+.overlay:hover::after {
+  top: 15px;
+  left: 15px;
+}
+
+.pp {
+  width: 300px;
+  border-radius: 4px;
+}
+
+/* Media query pour les écrans de 768px et plus */
+@media (min-width: 768px) {
+  .overlay:hover::before {
+    opacity: 0;
+  }
+}
