@@ -5,10 +5,16 @@
   padding: 0;
 }
 
+html {
+  scroll-padding-top: 30px;
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--main-color);
   color: var(--color-light-2);
   font-family: "inter";
+  font-size: 14px;
 }
 
 a {
@@ -47,9 +53,19 @@ h1 {
   background-color: var(--color-light-2);
 }
 
+@media screen and (min-width: 900px) {
+  body {
+    font-size: 16px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .title::after {
     width: 300px;
+  }
+
+  html {
+    scroll-padding-top: 50px;
   }
 }
 

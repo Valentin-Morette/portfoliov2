@@ -1,0 +1,51 @@
+.infoContact {
+  margin-top: 3rem;
+}
+
+.buttonContact {
+  background-color: rgb(100, 255, 218, 0);
+  border: 1px solid var(--green-main);
+  color: var(--green-main);
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-family: "inter";
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttonContact:hover {
+  background-color: rgb(100, 255, 218, 0.2);
+}
+
+.centerButton {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0 3rem 0;
+}
+
+.reseau-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.reseau-list li a {
+  font-size: 1.5rem;
+  color: var(--color-light-2);
+}
+
+.reseau li a:hover {
+  color: var(--green-main);
+}
+
+@media screen and (min-width: 768px) {
+  .centerButton {
+    margin: 5rem 0 8rem 0;
+  }
+
+  .reseau-list {
+    display: none;
+  }
+}

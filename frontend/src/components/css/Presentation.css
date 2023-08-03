@@ -1,6 +1,6 @@
 .presentation {
-  padding: 0 3rem;
-  margin: 150px auto;
+  padding: 0 1.5rem;
+  margin: 3rem auto 7rem auto;
   max-width: 1000px;
 }
 
@@ -17,8 +17,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  width: var(--ppSize);
-  height: var(--ppSize);
+  width: var(--ppMediumSize);
+  height: var(--ppMediumSize);
   background-color: #64ffda;
   opacity: 0.3;
   border-radius: var(--ppRadius);
@@ -35,8 +35,8 @@
   position: absolute;
   top: 20px; /* Décale de 10px vers le bas */
   left: 20px; /* Décale de 10px vers la droite */
-  width: var(--ppSize);
-  height: var(--ppSize);
+  width: var(--ppMediumSize);
+  height: var(--ppMediumSize);
   border: 2px solid #64ffda; /* La couleur et l'épaisseur de la bordure du carré */
   border-radius: var(--ppRadius); /* Conserve le même arrondi que l'image */
   z-index: -1; /* Place le carré en arrière-plan */
@@ -50,8 +50,8 @@
 }
 
 .pp {
-  width: var(--ppSize);
-  height: var(--ppSize);
+  width: var(--ppMediumSize);
+  height: var(--ppMediumSize);
   border-radius: var(--ppRadius);
 }
 
@@ -62,8 +62,17 @@
   gap: 2.5rem;
 }
 
+@media (min-width: 600px) {
+  .presentation {
+    padding: 0 3rem;
+  }
+}
+
 /* Media query pour les écrans de 768px et plus */
 @media (min-width: 768px) {
+  .presentation {
+    margin: 150px auto;
+  }
   .overlay:hover::before {
     opacity: 0;
   }

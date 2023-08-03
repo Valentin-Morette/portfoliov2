@@ -4,11 +4,11 @@ import pp from "../assets/img/pp.png";
 function Presentation() {
   return (
     <section className="presentation">
-      <h1 className="title">
+      <h1 className="title" id="presentationAncre">
         <span className="numberH1">01.</span> Présentation
       </h1>
       <div className="textImg">
-        <p className="test">
+        <p>
           Bonjour, je m'appelle Valentin Morette,
           <br />
           Je suis développeur web fullstack.
@@ -25,7 +25,8 @@ function Presentation() {
           <br />
           Suite à ce stage j'ai été embauché en tant que développeur web
           fullstack, je suis en charge du developpement de l'API qui alimente
-          l'ensemble des projets de l'entreprise.
+          l'ensemble des projets de l'entreprise ainsi que la mise a jour du
+          progiciel de l'entreprise.
         </p>
         <div className="overlay">
           <img src={pp} alt="pp" className="pp" />

@@ -2,6 +2,10 @@ a {
   font-family: "fira";
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .navbar {
   background-color: var(--main-color);
   color: var(--main-color-light);
@@ -18,13 +22,43 @@ a {
 
 #navliste {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1.5rem;
+  position: fixed;
+  top: 0;
+  right: -150%;
+  width: 100%; /* Vous pouvez ajuster cette valeur pour contrôler la largeur du menu */
+  height: 100%;
+  background-color: var(--light-navy);
+  padding: 1rem;
+  opacity: 1; /* Ajouter l'opacité */
+  transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Ajouter une transition pour l'opacité */
+  z-index: 1000;
+  align-items: center; /* Centrer verticalement les éléments du menu */
+  justify-content: center; /* Centrer horizontalement les éléments du menu */
+}
+
+#navliste.open {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  right: 0;
 }
 
 #navliste li {
   font-size: 0.9rem;
+}
+
+#navliste.open > li {
+  font-size: 1.5rem;
+}
+
+#navliste.closing {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#navliste.closing > li {
+  font-size: 1.5rem;
 }
 
 #navglobal {
@@ -34,6 +68,66 @@ a {
   width: 100%;
 }
 
+#navglobal > li {
+  display: flex;
+  align-items: center; /* Centrer verticalement les éléments à l'intérieur de chaque élément li */
+}
+
 .numberList {
   color: var(--green-main);
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 24px;
+  height: 16px;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.burger {
+  background: none; /* Supprimer l'arrière-plan du bouton */
+  border: none; /* Supprimer la bordure du bouton */
+  cursor: pointer;
+  padding: 0; /* Supprimer le padding du bouton */
+  z-index: 1000;
+  margin-bottom: 12px;
+}
+
+.burger-icon {
+  color: var(--color-light);
+  font-size: 3rem;
+}
+
+@media (min-width: 600px) {
+  #navliste.closing {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  #navliste.closing > li {
+    font-size: 0.9rem;
+  }
+
+  #navliste {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    position: static; /* Réinitialiser la position pour les écrans plus larges */
+    width: auto; /* Réinitialiser la largeur pour les écrans plus larges */
+    height: auto; /* Réinitialiser la hauteur pour les écrans plus larges */
+    background-color: transparent; /* Réinitialiser la couleur d'arrière-plan pour les écrans plus larges */
+    padding: 0; /* Réinitialiser la marge intérieure pour les écrans plus larges */
+    align-items: flex-start; /* Réinitialiser l'alignement vertical pour les écrans plus larges */
+    justify-content: flex-start; /* Réinitialiser l'alignement horizontal pour les écrans plus larges */
+  }
+
+  .burger {
+    display: none;
+  }
 }
