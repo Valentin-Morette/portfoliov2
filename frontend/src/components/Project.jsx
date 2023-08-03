@@ -2,10 +2,23 @@ import "./css/Project.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFolder } from "@fortawesome/free-regular-svg-icons";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faTwitter,
+  faChrome,
+  faDiscord,
+} from "@fortawesome/free-brands-svg-icons";
 import PropTypes from "prop-types";
 
 function Project({ project }) {
+  const social = {
+    github: faGithub,
+    twitter: faTwitter,
+    chrome: faChrome,
+    discord: faDiscord,
+    site: faUpRightFromSquare,
+  };
+
   return (
     <a href={project.lien} target="_blank" rel="noopener noreferrer">
       <article className="project">
@@ -15,10 +28,7 @@ function Project({ project }) {
               <FontAwesomeIcon icon={faFolder} className="folder" />
             </li>
             <li>
-              <FontAwesomeIcon
-                icon={project.deploy ? faUpRightFromSquare : faGithub}
-                className="links"
-              />
+              <FontAwesomeIcon icon={social[project.icon]} className="links" />
             </li>
           </ul>
 
@@ -35,7 +45,7 @@ Project.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     lien: PropTypes.string.isRequired,
-    deploy: PropTypes.bool.isRequired,
+    icon: PropTypes.string.isRequired,
   }).isRequired,
 };
 

@@ -1,5 +1,9 @@
-import Project from "./Project";
-import { dataProjects } from "../datas/dataProjects";
+import ProjectsCategories from "./ProjectsCategories";
+import {
+  dataProjectsSites,
+  dataProjectsBotsDiscord,
+  dataProjectsExtensionsChrome,
+} from "../datas/dataProjects";
 
 function Projects() {
   return (
@@ -7,11 +11,21 @@ function Projects() {
       <h1 className="title" id="projectAncre">
         <span className="numberH1">02.</span> Projets
       </h1>
-      <div className="projects">
-        {dataProjects.map((project) => (
-          <Project project={project} />
-        ))}
-      </div>
+      <ProjectsCategories
+        number="1"
+        category="Sites"
+        dataProjects={dataProjectsSites}
+      />
+      <ProjectsCategories
+        number="2"
+        category="Bots Discord"
+        dataProjects={dataProjectsBotsDiscord}
+      />
+      <ProjectsCategories
+        number="3"
+        category="Extensions Chrome"
+        dataProjects={dataProjectsExtensionsChrome}
+      />
     </section>
   );
 }
