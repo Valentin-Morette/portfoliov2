@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "https://valentin-morette.github.io/",
+  base: "/portfoliov2/",
   plugins: [react()],
   resolve: {
     alias: {
