@@ -1,12 +1,20 @@
 const dataProjectsSites = [
   {
-    id: 1,
-    title: "AppFolio",
+    id: 11,
+    title: "Pizzeria le charbon",
     description:
-      "Il s'agit d'un portfolio secondaire (et donc toujours actif) qui présente mes projets qui ne sont pas des sites web. Comme des bots discord, des bots twitter, des extensions chrome.",
-    lien: "https://valentin-morette.github.io/portfolio_bots/",
+      "Il s'agit d'un site vitrine pour une pizzeria à Montréal. Le site affiche la carte des pizzas et les coordonnées, il est relié à un google sheet pour que le propriétaire puisse modifier les informations facilement.",
+    lien: "https://pizzeria-le-charbon.com/",
     icon: "site",
   },
+  // {
+  //   id: 1,
+  //   title: "AppFolio",
+  //   description:
+  //     "Il s'agit d'un portfolio secondaire (et donc toujours actif) qui présente mes projets qui ne sont pas des sites web. Comme des bots discord, des bots twitter, des extensions chrome.",
+  //   lien: "https://valentin-morette.github.io/portfolio_bots/",
+  //   icon: "site",
+  // },
   {
     id: 2,
     title: "Portfolio V1",
@@ -83,11 +91,19 @@ const dataProjectsSites = [
 
 const dataProjectsBotsDiscord = [
   {
-    id: 1,
-    title: "BDM",
+    id: 5,
+    title: "PokéChat",
     description:
-      "Le bot Discord BDM (Blague de Merde) est un bot amusant qui répond à vos messages en utilisant des punchlines drôles.",
-    lien: "https://github.com/Valentin-Morette/DiscordBotBDM",
+      "PokéChat est un bot Discord qui permet de jouer à pokémon sur Discord, il est possible de capturer des pokémons, de les échanger et de les faire évoluer. Le bot est également capable de configurer le serveur en une commande.",
+    lien: "https://discord.gg/WKReA5nsFM",
+    icon: "discord",
+  },
+  {
+    id: 4,
+    title: "Awin Affiliation",
+    description:
+      "AwinAffiliation est un bot Discord qui permet de générer des liens affiliés Awin pour les sites marchands Fnac, Eneba et Cdiscount.",
+    lien: "https://github.com/Valentin-Morette/DiscordAwin",
     icon: "discord",
   },
   {
@@ -99,20 +115,20 @@ const dataProjectsBotsDiscord = [
     icon: "discord",
   },
   {
+    id: 1,
+    title: "BDM",
+    description:
+      "Le bot Discord BDM (Blague de Merde) est un bot amusant qui répond à vos messages en utilisant des punchlines drôles.",
+    lien: "https://github.com/Valentin-Morette/DiscordBotBDM",
+    icon: "discord",
+  },
+  {
     id: 3,
     title: "Twitter Bot",
     description:
       "Le bot Discord PublishTwitter est un bot Discord qui me permet de tweeter sur mon compte Twitter depuis un canal spécifique sur Discord. C'est un bot personnel qui n'est pas accessible à l'installation.",
     lien: "https://twitter.com/BiiiiipBooop",
     icon: "twitter",
-  },
-  {
-    id: 4,
-    title: "Awin Affiliation",
-    description:
-      "AwinAffiliation est un bot Discord qui permet de générer des liens affiliés Awin pour les sites marchands Fnac, Eneba et Cdiscount.",
-    lien: "https://github.com/Valentin-Morette/DiscordAwin",
-    icon: "discord",
   },
 ];
 
