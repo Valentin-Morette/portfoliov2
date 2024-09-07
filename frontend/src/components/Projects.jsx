@@ -13,13 +13,13 @@ function Projects() {
       </h1>
       <ProjectsCategories
         number="1"
-        category="Sites"
-        dataProjects={dataProjectsSites}
+        category="Bots Discord"
+        dataProjects={dataProjectsBotsDiscord}
       />
       <ProjectsCategories
         number="2"
-        category="Bots Discord"
-        dataProjects={dataProjectsBotsDiscord}
+        category="Sites"
+        dataProjects={dataProjectsSites}
       />
       <ProjectsCategories
         number="3"

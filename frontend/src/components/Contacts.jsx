@@ -13,12 +13,9 @@ function Contacts() {
         <span className="numberH1">03.</span> Contactes
       </h1>
       <p className="infoContact">
-        Bien que je ne recherche pas de nouvelles opportunités actuellement, ma
-        boîte mail est toujours ouverte.
-        <br />
-        <br />
-        Que vous ayez une question ou que vous souhaitiez simplement dire
-        bonjour, je ferai de mon mieux pour vous répondre !
+        Toujours à l'affût de nouvelles opportunités. Ma boîte mail est grand
+        ouverte, que ce soit pour répondre à vos questions ou juste pour
+        échanger un petit bonjour sympathique. N'hésitez pas à me contacter !
         <br />
         <br />
         Vous pouvez également me retrouver sur les réseaux sociaux, comme

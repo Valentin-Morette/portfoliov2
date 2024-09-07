@@ -21,7 +21,9 @@ function Project({ project }) {
 
   return (
     <a href={project.lien} target="_blank" rel="noopener noreferrer">
-      <article className="project">
+      <article
+        className={`project ${project.fav ? "highlighted-project" : ""}`}
+      >
         <div className="betProject">
           <ul className="upProject">
             <li>
@@ -46,6 +48,7 @@ Project.propTypes = {
     description: PropTypes.string.isRequired,
     lien: PropTypes.string.isRequired,
     icon: PropTypes.string.isRequired,
+    fav: PropTypes.bool.isRequired,
   }).isRequired,
 };
 
