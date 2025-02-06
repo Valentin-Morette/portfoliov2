@@ -1,28 +1,19 @@
 const dataProjectsSites = [
   {
+    id: 1,
+    title: "Ikoula, tunnel de vente",
+    description:
+      "Il s'agit du tunnel de vente de la société Ikoula, il permet de commander des serveurs dédiés et des solutions cloud.",
+    lien: "https://shop.ikoula.com/product/1122?cpu=16553&ram=16637&hdd=16567&os=16866",
+    icon: "site",
+    fav: false,
+  },
+  {
     id: 11,
     title: "Pizzeria le charbon",
     description:
       "Il s'agit d'un site vitrine pour une pizzeria à Montréal. Le site affiche la carte des pizzas et les coordonnées, il est relié à un google sheet pour que le propriétaire puisse modifier les informations facilement.",
     lien: "https://pizzeria-le-charbon.com/",
-    icon: "site",
-    fav: false,
-  },
-  {
-    id: 2,
-    title: "Portfolio V1",
-    description:
-      "Il s'agit de mon premier portfolio, son design ancien ma donné envie de le refaire pour celui-ci.",
-    lien: "https://valentin-morette.github.io/portfolio/",
-    icon: "site",
-    fav: false,
-  },
-  {
-    id: 4,
-    title: "Posteries",
-    description:
-      "Il s'agit du second projet de groupe réalisé à la Wild Code School. Ce jeu utilise l'API 'The Movie Database' et consiste à deviner le plus rapidement possible le poster d'un film.",
-    lien: "https://theodep.github.io/Posteries/#/",
     icon: "site",
     fav: false,
   },
@@ -53,15 +44,6 @@ const dataProjectsSites = [
     icon: "site",
     fav: false,
   },
-  {
-    id: 10,
-    title: "Coockie-Cliker",
-    description:
-      "Ce jeu reprend les principes établis par Cookie-Clicker, et constitue un espace d'entraînement pour perfectionner mes compétences en React en dehors des exercices proposés dans les cours.",
-    lien: "https://Valentin-Morette.github.io/coockie_cliker/",
-    icon: "site",
-    fav: false,
-  },
 ];
 
 const dataProjectsBotsDiscord = [
@@ -69,7 +51,7 @@ const dataProjectsBotsDiscord = [
     id: 5,
     title: "PokéChat",
     description:
-      "PokéChat est un bot Discord qui permet de jouer à pokémon sur Discord, il est possible de capturer des pokémons, de les échanger et de les faire évoluer. Le bot est également capable de configurer le serveur en une commande.",
+      "PokéChat est un bot Discord qui permet de jouer à pokémon sur Discord, il est possible de capturer des pokémons, de les échanger et de les faire évoluer.",
     lien: "https://discord.gg/WKReA5nsFM",
     icon: "discord",
     fav: true,
@@ -101,12 +83,15 @@ const dataProjectsBotsDiscord = [
     icon: "discord",
     fav: false,
   },
+];
+
+const dataProjectsBotsTwitter = [
   {
-    id: 3,
-    title: "Twitter Bot",
+    id: 1,
+    title: "PokDiscord",
     description:
-      "Le bot Discord PublishTwitter est un bot Discord qui me permet de tweeter sur mon compte Twitter depuis un canal spécifique sur Discord. C'est un bot personnel qui n'est pas accessible à l'installation.",
-    lien: "https://twitter.com/BiiiiipBooop",
+      "PokDiscord est un bot Twitter qui fait un récapitulatif journalier des captures de pokémons effectuées sur le bot Discord PokéChat.",
+    lien: "https://x.com/pokDiscord",
     icon: "twitter",
     fav: false,
   },
@@ -128,4 +113,5 @@ export {
   dataProjectsSites,
   dataProjectsBotsDiscord,
   dataProjectsExtensionsChrome,
+  dataProjectsBotsTwitter,
 };

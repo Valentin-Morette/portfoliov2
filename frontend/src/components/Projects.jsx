@@ -3,6 +3,7 @@ import {
   dataProjectsSites,
   dataProjectsBotsDiscord,
   dataProjectsExtensionsChrome,
+  dataProjectsBotsTwitter,
 } from "../datas/dataProjects";
 
 function Projects() {
@@ -18,11 +19,16 @@ function Projects() {
       />
       <ProjectsCategories
         number="2"
+        category="Bots Twitter"
+        dataProjects={dataProjectsBotsTwitter}
+      />
+      <ProjectsCategories
+        number="3"
         category="Sites"
         dataProjects={dataProjectsSites}
       />
       <ProjectsCategories
-        number="3"
+        number="4"
         category="Extensions Chrome"
         dataProjects={dataProjectsExtensionsChrome}
       />
